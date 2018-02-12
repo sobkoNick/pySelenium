@@ -1,0 +1,17 @@
+1518439994459	geckodriver	INFO	geckodriver 0.19.1
+1518439994464	geckodriver	INFO	Listening on 127.0.0.1:54433
+1518439997556	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\MYKOLA~1\\AppData\\Local\\Temp\\rust_mozprofile.ptgz3Tqgvbd1"
+1518440019649	geckodriver	INFO	geckodriver 0.19.1
+1518440019653	geckodriver	INFO	Listening on 127.0.0.1:54457
+1518440022753	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\MYKOLA~1\\AppData\\Local\\Temp\\rust_mozprofile.cRKDv9EsOtc5"
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+1518440023385	Marionette	INFO	Listening on port 2828
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+[Child 1518440147437	geckodriver	INFO	geckodriver 0.19.1
+1518440147441	geckodriver	INFO	Listening on 127.0.0.1:54573
+1518440150532	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\MYKOLA~1\\AppData\\Local\\Temp\\rust_mozprofile.9T0rlPMJP7dO"
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+1518440151146	Marionette	INFO	Listening on port 2828
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+[Child 5044] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
+[Child 5044] WARNING: pipe error: 109: file c:/builds/moz2_slav

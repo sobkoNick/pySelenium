@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e31b36ed-9a37-46ea-a97a-e388cd04f7b9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/fixture/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/model/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/fixture/add_new.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/fixture/session.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/application.py" afterPath="$PROJECT_DIR$/fixture/application.py" />
-      <change beforePath="$PROJECT_DIR$/first.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/seconf.py" afterPath="$PROJECT_DIR$/test/test_ide_second.py" />
-      <change beforePath="$PROJECT_DIR$/seleniumIde.py" afterPath="$PROJECT_DIR$/test/seleniumIde.py" />
-      <change beforePath="$PROJECT_DIR$/user.py" afterPath="$PROJECT_DIR$/model/user.py" />
+      <change beforePath="$PROJECT_DIR$/fixture/application.py" afterPath="$PROJECT_DIR$/fixture/application.py" />
+      <change beforePath="$PROJECT_DIR$/test/test_ide_second.py" afterPath="$PROJECT_DIR$/test/test_ide_second.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,23 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="seleniumIde.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/seleniumIde.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="61" lean-forward="true" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-              <folding>
-                <element signature="e#24#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_ide_second.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_ide_second.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test_ide_second.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+            <state relative-caret-position="391">
+              <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
               <folding>
                 <element signature="e#25#38#0" expanded="true" />
               </folding>
@@ -48,11 +32,31 @@
       <file leaf-file-name="application.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixture/application.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="79" column="26" lean-forward="true" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
+            <state relative-caret-position="119">
+              <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_new.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fixture/add_new.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="session.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fixture/session.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,6 +89,10 @@
         <option value="$PROJECT_DIR$/user.py" />
         <option value="$PROJECT_DIR$/application.py" />
         <option value="$PROJECT_DIR$/seconf.py" />
+        <option value="$PROJECT_DIR$/fixture/session.py" />
+        <option value="$PROJECT_DIR$/test/test_ide_second.py" />
+        <option value="$PROJECT_DIR$/fixture/application.py" />
+        <option value="$PROJECT_DIR$/fixture/add_new.py" />
       </list>
     </option>
   </component>
@@ -165,7 +173,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in test_ide_second.py">
+  <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -276,22 +284,17 @@
       <option name="project" value="LOCAL" />
       <updated>1518534657986</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create packages for every class and moved files there">
+      <created>1518534977286</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1518534977286</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_seconf_py - 2018.02.13 at 14h 44m 43s.xml">
-      <configuration name="py.test in seconf.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_seconf_py - 2018.02.13 at 16h 06m 45s.xml">
-      <configuration name="py.test in seconf.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_seconf_py - 2018.02.13 at 16h 22m 55s.xml">
-      <configuration name="py.test in seconf.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_seconf_py - 2018.02.13 at 16h 36m 45s.xml">
-      <configuration name="py.test in seconf.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_in_seconf_py - 2018.02.13 at 16h 55m 21s.xml">
       <configuration name="py.test in seconf.py" configurationId="tests" />
     </history-entry>
@@ -309,6 +312,18 @@
     </history-entry>
     <history-entry file="py_test_in_seconf_py - 2018.02.13 at 17h 04m 54s.xml">
       <configuration name="py.test in seconf.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_ide_second_py - 2018.02.13 at 17h 22m 30s.xml">
+      <configuration name="py.test in test_ide_second.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_ide_second_py - 2018.02.13 at 17h 33m 33s.xml">
+      <configuration name="py.test in test_ide_second.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_ide_second_py - 2018.02.13 at 17h 34m 22s.xml">
+      <configuration name="py.test in test_ide_second.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_ide_second_py - 2018.02.13 at 17h 35m 26s.xml">
+      <configuration name="py.test in test_ide_second.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -367,7 +382,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="code refactoring" />
     <MESSAGE value="add application.py file with test steps" />
-    <option name="LAST_COMMIT_MESSAGE" value="add application.py file with test steps" />
+    <MESSAGE value="create packages for every class and moved files there" />
+    <option name="LAST_COMMIT_MESSAGE" value="create packages for every class and moved files there" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -420,31 +436,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/application.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="79" column="26" lean-forward="true" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_ide_second.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="e#25#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -456,12 +452,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/seleniumIde.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="61" lean-forward="true" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/add_new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_ide_second.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+          <folding>
+            <element signature="e#25#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

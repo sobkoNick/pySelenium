@@ -12,13 +12,13 @@ def app(request):
     return fixture
 
 
-def test_seconf(app):
-    app.login(username="admin", password="secret")
-    app.crate_and_submit(User(name="asdasd", last_name="dfsfds", nick_name="asdfsd"))
-    app.home_page()
+def test_second(app):
+    app.session.login(username="admin", password="secret")
+    app.add_new.crate_and_submit(User(name="My name", last_name="My last name", nick_name="My nick name"))
+    app.add_new.back_to_home_page()
 
 
 def test_second_empty(app):
-    app.login(username="admin", password="secret")
-    app.crate_and_submit(User(name="name", last_name="last", nick_name="nick"))
-    app.home_page()
+    app.session.login(username="admin", password="secret")
+    app.add_new.crate_and_submit(User(name="name", last_name="last", nick_name="nick"))
+    app.add_new.back_to_home_page()

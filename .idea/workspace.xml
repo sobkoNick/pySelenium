@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e31b36ed-9a37-46ea-a97a-e388cd04f7b9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/seconf.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/user.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/pySelenium.iml" afterPath="$PROJECT_DIR$/.idea/pySelenium.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/application.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/seconf.py" afterPath="$PROJECT_DIR$/seconf.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,10 +30,22 @@
       <file leaf-file-name="seconf.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/seconf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="47" column="71" lean-forward="true" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
+            <state relative-caret-position="170">
+              <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
               <folding>
-                <element signature="e#24#39#0" expanded="true" />
+                <element signature="e#25#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="433">
+              <caret line="79" column="26" lean-forward="true" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,6 +63,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -59,6 +77,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/user.py" />
+        <option value="$PROJECT_DIR$/application.py" />
         <option value="$PROJECT_DIR$/seconf.py" />
       </list>
     </option>
@@ -215,35 +234,59 @@
       <option name="project" value="LOCAL" />
       <updated>1518442943170</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="code refactoring">
+      <created>1518525960572</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1518525960572</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_seleniumIde_py - 2018.02.12 at 15h 57m 39s.xml">
-      <configuration name="Unittests in seleniumIde.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_pySelenium - 2018.02.13 at 12h 07m 01s.xml">
-      <configuration name="py.test in pySelenium" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_seconf_py - 2018.02.13 at 14h 36m 16s.xml">
-      <configuration name="py.test in seconf.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_seconf_py - 2018.02.13 at 14h 41m 44s.xml">
-      <configuration name="py.test in seconf.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_in_seconf_py - 2018.02.13 at 14h 44m 43s.xml">
+      <configuration name="py.test in seconf.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_seconf_py - 2018.02.13 at 16h 06m 45s.xml">
+      <configuration name="py.test in seconf.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_seconf_py - 2018.02.13 at 16h 22m 55s.xml">
+      <configuration name="py.test in seconf.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_seconf_py - 2018.02.13 at 16h 36m 45s.xml">
+      <configuration name="py.test in seconf.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_seconf_py - 2018.02.13 at 16h 55m 21s.xml">
+      <configuration name="py.test in seconf.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_seconf_py - 2018.02.13 at 16h 57m 04s.xml">
+      <configuration name="py.test in seconf.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_seconf_py - 2018.02.13 at 17h 02m 37s.xml">
+      <configuration name="py.test in seconf.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_seconf_py - 2018.02.13 at 17h 03m 14s.xml">
+      <configuration name="py.test in seconf.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_seconf_py - 2018.02.13 at 17h 04m 10s.xml">
+      <configuration name="py.test in seconf.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_seconf_py - 2018.02.13 at 17h 04m 54s.xml">
       <configuration name="py.test in seconf.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21536796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -253,7 +296,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -288,7 +330,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="code refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="code refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -325,6 +368,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hello/venv/Lib/site-packages/_pytest/fixtures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="741" column="0" lean-forward="false" selection-start-line="741" selection-start-column="0" selection-end-line="741" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/seleniumIde.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="535">
@@ -335,20 +394,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user.py">
+    <entry file="file://$PROJECT_DIR$/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="433">
+          <caret line="79" column="26" lean-forward="true" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/seconf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="47" column="71" lean-forward="true" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
+        <state relative-caret-position="170">
+          <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
           <folding>
-            <element signature="e#24#39#0" expanded="true" />
+            <element signature="e#25#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

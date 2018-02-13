@@ -1,19 +1,18 @@
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException, NoAlertPresentException
 
 from fixture.session import SessionHelper
-from fixture.add_new import AddHelper
+from fixture.user_page import UserHelper
 
 
 class Application:
     def __init__(self):
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Chrome('C:/Users/MykolaSobko/PycharmProjects/pySelenium/chromedriver.exe')
         self.driver.implicitly_wait(30)
         self.base_url = "http://localhost/"
         self.verificationErrors = []
         self.accept_next_alert = True
         self.session = SessionHelper(self)  # reference to SessionHelper which has login() method
-        self.add_new = AddHelper(self)
+        self.user_helper = UserHelper(self)
 
     def open_home_page(self):
         driver = self.driver

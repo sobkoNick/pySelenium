@@ -1,4 +1,7 @@
-class AddHelper:
+from selenium.webdriver.common.alert import Alert
+
+
+class UserHelper:
     def __init__(self, app):
         self.app = app
 
@@ -21,6 +24,19 @@ class AddHelper:
         # submit creation
         submitBtn = driver.find_element_by_xpath("//*[@name='submit']")
         submitBtn.click()
+
+    def delete_first_user(self):
+        print("Delete first user")
+        driver = self.app.driver
+        first_checkbox = driver.find_element_by_xpath("//*[@id='maintable']/tbody/tr[2]/td[1]")
+        first_checkbox.click()
+        delete_btn = driver.find_element_by_xpath("//*[@value='Delete']")
+        delete_btn.click()
+
+        alert = Alert(driver)
+        alert.accept()
+
+        # self.back_to_home_page()
 
     def back_to_home_page(self):
         driver = self.app.driver

@@ -10,7 +10,7 @@ class UserHelper:
         print("Go to add new user page")
         driver.find_element_by_link_text(u"add new").click()
 
-    def crate_and_submit(self, user):
+    def create_and_submit(self, user):
         driver = self.app.driver
         self.open_new()
         print("Add user and submit")
@@ -62,3 +62,8 @@ class UserHelper:
         driver = self.app.driver
         print("Open home page")
         driver.find_element_by_link_text("home").click()
+
+    def count(self):
+        driver = self.app.driver
+        self.back_to_home_page()
+        return len(driver.find_elements_by_xpath("//table[@id='maintable']/tbody/tr[@name='entry']"))

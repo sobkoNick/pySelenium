@@ -8,7 +8,7 @@ from fixture.user_page import UserHelper
 class Application:
     def __init__(self):
         self.driver = webdriver.Chrome(Constants.WEB_DRIVER_WAY)
-        self.driver.implicitly_wait(30)
+        self.driver.implicitly_wait(10)
         self.base_url = Constants.BASE_URL
         self.verificationErrors = []
         self.accept_next_alert = True

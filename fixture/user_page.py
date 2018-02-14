@@ -14,31 +14,51 @@ class UserHelper:
         driver = self.app.driver
         self.open_new()
         print("Add user and submit")
-        # fill form
-        driver.find_element_by_name("firstname").clear()
-        driver.find_element_by_name("firstname").send_keys(user.name)
-        driver.find_element_by_name("lastname").clear()
-        driver.find_element_by_name("lastname").send_keys(user.last_name)
-        driver.find_element_by_name("nickname").clear()
-        driver.find_element_by_name("nickname").send_keys(user.nick_name)
+        self.fill_form(user)
         # submit creation
         submitBtn = driver.find_element_by_xpath("//*[@name='submit']")
         submitBtn.click()
 
+    def fill_form(self, user):
+        # fill form
+        self.type_text_to_element("firstname", user.name)
+        self.type_text_to_element("lastname", user.last_name)
+        self.type_text_to_element("nickname", user.nick_name)
+
+    def type_text_to_element(self, field_name, text):
+        driver = self.app.driver
+        if text is not None:
+            driver.find_element_by_name(field_name).clear()
+            driver.find_element_by_name(field_name).send_keys(text)
+
     def delete_first_user(self):
         print("Delete first user")
         driver = self.app.driver
-        first_checkbox = driver.find_element_by_xpath("//*[@id='maintable']/tbody/tr[2]/td[1]")
-        first_checkbox.click()
+        self.select_first()
         delete_btn = driver.find_element_by_xpath("//*[@value='Delete']")
         delete_btn.click()
 
         alert = Alert(driver)
         alert.accept()
 
-        # self.back_to_home_page()
+    def select_first(self):
+        driver = self.app.driver
+        first_checkbox = driver.find_element_by_xpath("//*[@id='maintable']/tbody/tr[2]/td[1]")
+        first_checkbox.click()
+
+    def modify(self, modify_data):
+        driver = self.app.driver
+        self.select_first()
+        # open modification form
+        modify_first_brt = driver.find_element_by_xpath("//*[@id='maintable']/tbody/tr[2]/td[8]")
+        modify_first_brt.click()
+        self.fill_form(modify_data)
+        update_btn = driver.find_element_by_name("update")
+        update_btn.click()
+        self.back_to_home_page()
+
 
     def back_to_home_page(self):
         driver = self.app.driver
         print("Open home page")
-        driver.find_element_by_link_text("home page").click()
+        driver.find_element_by_link_text("home").click()

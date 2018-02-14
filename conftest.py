@@ -11,11 +11,10 @@ def app(request):
     global fixture
     if fixture is None:
         fixture = Application()
-        fixture.session.login(username=Constants.USER_NAME, password=Constants.PASSWORD)
     else:
         if not fixture.is_valid():
             fixture = Application()
-            fixture.session.login(username=Constants.USER_NAME, password=Constants.PASSWORD)
+    fixture.session.ensure_login(username=Constants.USER_NAME, password=Constants.PASSWORD)
     return fixture
 
 
@@ -23,7 +22,7 @@ def app(request):
 @pytest.fixture(scope="session", autouse=True)
 def stop(request):
     def log_out():
-        fixture.session.logout()
+        fixture.session.ensure_logout()
         fixture.destroy()
     request.addfinalizer(log_out)
     return fixture

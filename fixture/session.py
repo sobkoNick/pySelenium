@@ -17,8 +17,30 @@ class SessionHelper:
 
         driver.find_element_by_css_selector("input[type=\"submit\"]").click()
 
+    def ensure_login(self, username, password):
+        driver = self.app.driver
+        if self.is_loged_in():
+            if self.is_loged_in_as(username):
+                return
+            else:
+                self.logout()
+        self.login(username, password)
+
     def logout(self):
         print("Log out")
         driver = self.app.driver
         logOutBtn = driver.find_element_by_xpath("//*[@name='logout']/a")
         logOutBtn.click()
+
+    def ensure_logout(self):
+        driver = self.app.driver
+        if self.is_loged_in():
+            self.logout()
+
+    def is_loged_in(self):
+        driver = self.app.driver
+        return len(driver.find_elements_by_xpath("//*[@name='logout']/a")) > 0
+
+    def is_loged_in_as(self, username):
+        driver = self.app.driver
+        return username in driver.find_element_by_xpath("//form[@name='logout']/b").text

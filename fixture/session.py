@@ -6,10 +6,15 @@ class SessionHelper:
         driver = self.app.driver
         self.app.open_home_page()
         print("Login actions")
-        driver.find_element_by_name("user").clear()
-        driver.find_element_by_name("user").send_keys(username)
-        driver.find_element_by_name("pass").clear()
-        driver.find_element_by_name("pass").send_keys(password)
+
+        user_name_element = driver.find_element_by_name("user")
+        user_name_element.clear()
+        user_name_element.send_keys(username)
+
+        password_element = driver.find_element_by_name("pass")
+        password_element.clear()
+        password_element.send_keys(password)
+
         driver.find_element_by_css_selector("input[type=\"submit\"]").click()
 
     def logout(self):

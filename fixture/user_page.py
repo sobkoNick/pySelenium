@@ -28,8 +28,9 @@ class UserHelper:
     def type_text_to_element(self, field_name, text):
         driver = self.app.driver
         if text is not None:
-            driver.find_element_by_name(field_name).clear()
-            driver.find_element_by_name(field_name).send_keys(text)
+            element = driver.find_element_by_name(field_name);
+            element.clear()
+            element.send_keys(text)
 
     def delete_first_user(self):
         print("Delete first user")
@@ -56,7 +57,6 @@ class UserHelper:
         update_btn = driver.find_element_by_name("update")
         update_btn.click()
         self.back_to_home_page()
-
 
     def back_to_home_page(self):
         driver = self.app.driver

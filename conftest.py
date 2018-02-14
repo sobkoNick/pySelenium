@@ -1,10 +1,29 @@
 import pytest
 from fixture.application import Application
+from constants import Constants
 
+fixture = None
 
-# @pytest.fixture
-@pytest.fixture(scope="session") # use one browser for all tests, BUT IT NEEDS TO ADD LOG OUT TO TEST
+# start fixture with assertion on fixture valid
+@pytest.fixture
+# @pytest.fixture(scope="session") # use one browser for all tests, BUT IT NEEDS TO ADD LOG OUT TO TEST
 def app(request):
-    fixture = Application()
-    request.addfinalizer(fixture.destroy)
+    global fixture
+    if fixture is None:
+        fixture = Application()
+        fixture.session.login(username=Constants.USER_NAME, password=Constants.PASSWORD)
+    else:
+        if not fixture.is_valid():
+            fixture = Application()
+            fixture.session.login(username=Constants.USER_NAME, password=Constants.PASSWORD)
+    return fixture
+
+
+# log-out fixture. runs one time after all test
+@pytest.fixture(scope="session", autouse=True)
+def stop(request):
+    def log_out():
+        fixture.session.logout()
+        fixture.destroy()
+    request.addfinalizer(log_out)
     return fixture

@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e31b36ed-9a37-46ea-a97a-e388cd04f7b9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/test_modify_user.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/constants.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/conftest.py" afterPath="$PROJECT_DIR$/conftest.py" />
+      <change beforePath="$PROJECT_DIR$/fixture/application.py" afterPath="$PROJECT_DIR$/fixture/application.py" />
       <change beforePath="$PROJECT_DIR$/fixture/session.py" afterPath="$PROJECT_DIR$/fixture/session.py" />
       <change beforePath="$PROJECT_DIR$/fixture/user_page.py" afterPath="$PROJECT_DIR$/fixture/user_page.py" />
       <change beforePath="$PROJECT_DIR$/model/user.py" afterPath="$PROJECT_DIR$/model/user.py" />
       <change beforePath="$PROJECT_DIR$/test/test_del_user.py" afterPath="$PROJECT_DIR$/test/test_del_user.py" />
       <change beforePath="$PROJECT_DIR$/test/test_ide_add_user.py" afterPath="$PROJECT_DIR$/test/test_ide_add_user.py" />
+      <change beforePath="$PROJECT_DIR$/test/test_modify_user.py" afterPath="$PROJECT_DIR$/test/test_modify_user.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,34 +22,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test_ide_add_user.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_ide_add_user.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="session.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="session.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fixture/session.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="221">
+              <caret line="13" column="62" lean-forward="true" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="conftest.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/conftest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -78,15 +58,16 @@
         <option value="$PROJECT_DIR$/fixture/add_new.py" />
         <option value="$PROJECT_DIR$/test/test_ide_second.py" />
         <option value="$PROJECT_DIR$/test/conftest.py" />
-        <option value="$PROJECT_DIR$/fixture/application.py" />
-        <option value="$PROJECT_DIR$/fixture/session.py" />
-        <option value="$PROJECT_DIR$/conftest.py" />
+        <option value="$PROJECT_DIR$/test/test_modify_group.py" />
+        <option value="$PROJECT_DIR$/test/test_modify_user.py" />
         <option value="$PROJECT_DIR$/test/test_del_user.py" />
         <option value="$PROJECT_DIR$/test/test_ide_add_user.py" />
-        <option value="$PROJECT_DIR$/test/test_modify_group.py" />
-        <option value="$PROJECT_DIR$/model/user.py" />
         <option value="$PROJECT_DIR$/fixture/user_page.py" />
-        <option value="$PROJECT_DIR$/test/test_modify_user.py" />
+        <option value="$PROJECT_DIR$/fixture/session.py" />
+        <option value="$PROJECT_DIR$/fixture/application.py" />
+        <option value="$PROJECT_DIR$/model/user.py" />
+        <option value="$PROJECT_DIR$/constants.py" />
+        <option value="$PROJECT_DIR$/conftest.py" />
       </list>
     </option>
   </component>
@@ -170,7 +151,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in test_modify_user.py">
+  <component name="RunManager" selected="Python tests.py.test in test_ide_add_user.py">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -273,11 +254,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_user.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for test_modify_user.test_modify_name" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_ide_add_user.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_del_user.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_ide_add_user.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_del_user.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_user.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_modify_user.test_modify_name" />
       </list>
     </recent_temporary>
   </component>
@@ -337,38 +318,45 @@
       <option name="project" value="LOCAL" />
       <updated>1518541846552</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add test covering modify user story.&#10;add log out.&#10;add modify method to user_page">
+      <created>1518611379303</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1518611379303</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_test_modify_user_test_modify_name - 2018.02.14 at 14h 14m 05s.xml">
-      <configuration name="py.test for test_modify_user.test_modify_name" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test - 2018.02.14 at 13h 14m 45s.xml">
+    <history-entry file="py_test_in_test - 2018.02.14 at 14h 35m 05s.xml">
       <configuration name="py.test in test" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test - 2018.02.14 at 13h 15m 03s.xml">
-      <configuration name="py.test in test" configurationId="tests" />
+    <history-entry file="py_test_in_test_del_user_py - 2018.02.14 at 14h 53m 11s.xml">
+      <configuration name="py.test in test_del_user.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test - 2018.02.14 at 13h 15m 31s.xml">
-      <configuration name="py.test in test" configurationId="tests" />
+    <history-entry file="py_test_in_test_del_user_py - 2018.02.14 at 14h 54m 13s.xml">
+      <configuration name="py.test in test_del_user.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_modify_user_py - 2018.02.14 at 14h 09m 45s.xml">
-      <configuration name="py.test in test_modify_user.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_del_user_py - 2018.02.14 at 14h 54m 21s.xml">
+      <configuration name="py.test in test_del_user.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_modify_user_py - 2018.02.14 at 14h 10m 38s.xml">
-      <configuration name="py.test in test_modify_user.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_del_user_py - 2018.02.14 at 14h 54m 27s.xml">
+      <configuration name="py.test in test_del_user.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_modify_user_py - 2018.02.14 at 14h 17m 24s.xml">
-      <configuration name="py.test in test_modify_user.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_ide_add_user_py - 2018.02.14 at 14h 46m 06s.xml">
+      <configuration name="py.test in test_ide_add_user.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_modify_user_py - 2018.02.14 at 14h 19m 05s.xml">
-      <configuration name="py.test in test_modify_user.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_ide_add_user_py - 2018.02.14 at 14h 58m 34s.xml">
+      <configuration name="py.test in test_ide_add_user.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test_modify_user_py - 2018.02.14 at 14h 22m 01s.xml">
       <configuration name="py.test in test_modify_user.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test_modify_user_py - 2018.02.14 at 14h 23m 34s.xml">
+      <configuration name="py.test in test_modify_user.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_modify_user_py - 2018.02.14 at 14h 50m 01s.xml">
       <configuration name="py.test in test_modify_user.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -431,7 +419,8 @@
     <MESSAGE value="create packages for every class and moved files there" />
     <MESSAGE value="create classes AddHelper and SessionHelper to work with concrete pages" />
     <MESSAGE value="create test to delete first user. fixture moved to conftest." />
-    <option name="LAST_COMMIT_MESSAGE" value="create test to delete first user. fixture moved to conftest." />
+    <MESSAGE value="add test covering modify user story.&#10;add log out.&#10;add modify method to user_page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test covering modify user story.&#10;add log out.&#10;add modify method to user_page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -469,9 +458,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="106" lean-forward="true" selection-start-line="8" selection-start-column="106" selection-end-line="8" selection-end-column="106" />
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -529,32 +516,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/seleniumIde.py" />
-    <entry file="file://$PROJECT_DIR$/fixture/application.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="106" lean-forward="false" selection-start-line="8" selection-start-column="106" selection-end-line="8" selection-end-column="106" />
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_del_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/selectors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
@@ -571,45 +532,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_ide_add_user.py">
+    <entry file="file://$PROJECT_DIR$/test/test_modify_user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="51">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fixture/user_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        <state relative-caret-position="391">
+          <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_ide_add_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="66" lean-forward="true" selection-start-line="1" selection-start-column="66" selection-end-line="1" selection-end-column="66" />
+        <state relative-caret-position="68">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_modify_user.py">
+    <entry file="file://$PROJECT_DIR$/test/test_del_user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="54" lean-forward="true" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+        <state relative-caret-position="51">
+          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="153">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="62" lean-forward="true" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>

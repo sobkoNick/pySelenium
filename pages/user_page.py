@@ -3,7 +3,7 @@ from selenium.webdriver.remote.webelement import WebElement
 
 from model.user import User
 from pages.locators.user_page_locators import UserPageLocators
-
+import time
 
 class UserHelper:
     def __init__(self, app):
@@ -37,27 +37,27 @@ class UserHelper:
             element.clear()
             element.send_keys(text)
 
-    def delete_first_user(self):
+    def delete_user(self, index):
         print("Delete first user")
         driver = self.app.driver
-        self.select_first()
+        self.select_user_by_index(index)
         delete_btn = driver.find_element_by_xpath(UserPageLocators.DELETE_BTN)
         delete_btn.click()
         alert = Alert(driver)
         alert.accept()
         self.user_cache = None
 
-    def select_first(self):
+    def select_user_by_index(self, index):
         driver = self.app.driver
-        first_checkbox = driver.find_element_by_xpath(UserPageLocators.FIRST_ELEMENT_IN_TABLE_CHECKBOX)
-        first_checkbox.click()
+        checkbox = driver.find_elements_by_xpath(UserPageLocators.CHECKBOXES_IN_TABLE)[index]
+        checkbox.click()
 
-    def modify(self, modify_data):
+    def modify(self, modify_data, index):
         driver = self.app.driver
-        self.select_first()
+        self.select_user_by_index(index)
         # open modification form
-        modify_first_brt = driver.find_element_by_xpath(UserPageLocators.MODIFY_FIRST_ELEMENT_BUTTON)
-        modify_first_brt.click()
+        modify_btn = driver.find_elements_by_xpath(UserPageLocators.MODIFY_BUTTONS_IN_TABLE)[index]
+        modify_btn.click()
         self.fill_form(modify_data)
         update_btn = driver.find_element_by_name("update")
         update_btn.click()
@@ -69,6 +69,7 @@ class UserHelper:
         if not driver.current_url.endswith('addressbook/') and self.get_table_lenght(driver) > 0:
             print("Open home page")
             driver.find_element_by_link_text("home").click()
+        time.sleep(3)  # driver searches for elements too soon
 
     def count(self):
         driver = self.app.driver

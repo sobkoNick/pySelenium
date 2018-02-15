@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+import time
 from model.user import User
 
 
@@ -13,6 +13,7 @@ def test_add_new(app):
 
 
 def test_add_empty(app):
+    time.sleep(1)
     old_groups = app.user_helper.get_user_list()
     app.user_helper.create_and_submit(User(name="name", last_name="last", nick_name="nick"))
     app.user_helper.back_to_home_page()

@@ -1,3 +1,5 @@
+from pages.locators.log_in_out_page_locators import LogInOutPageLocators
+
 class SessionHelper:
     def __init__(self, app):
         self.app = app
@@ -15,7 +17,7 @@ class SessionHelper:
         password_element.clear()
         password_element.send_keys(password)
 
-        driver.find_element_by_css_selector("input[type=\"submit\"]").click()
+        driver.find_element_by_xpath(LogInOutPageLocators.LOGIN_BTN).click()
 
     def ensure_login(self, username, password):
         driver = self.app.driver
@@ -29,7 +31,7 @@ class SessionHelper:
     def logout(self):
         print("Log out")
         driver = self.app.driver
-        logOutBtn = driver.find_element_by_xpath("//*[@name='logout']/a")
+        logOutBtn = driver.find_element_by_xpath(LogInOutPageLocators.LOGOUT_BTN)
         logOutBtn.click()
 
     def ensure_logout(self):
@@ -39,8 +41,8 @@ class SessionHelper:
 
     def is_loged_in(self):
         driver = self.app.driver
-        return len(driver.find_elements_by_xpath("//*[@name='logout']/a")) > 0
+        return len(driver.find_elements_by_xpath(LogInOutPageLocators.LOGOUT_BTN)) > 0
 
     def is_loged_in_as(self, username):
         driver = self.app.driver
-        return username in driver.find_element_by_xpath("//form[@name='logout']/b").text
+        return username in driver.find_element_by_xpath(LogInOutPageLocators.USER_NAME).text

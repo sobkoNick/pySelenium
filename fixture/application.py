@@ -1,8 +1,8 @@
 from selenium import webdriver
 
 from constants import Constants
-from fixture.session import SessionHelper
-from fixture.user_page import UserHelper
+from pages.session import SessionHelper
+from pages.user_page import UserHelper
 
 
 class Application:

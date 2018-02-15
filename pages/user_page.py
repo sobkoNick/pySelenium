@@ -2,6 +2,7 @@ from selenium.webdriver.common.alert import Alert
 from selenium.webdriver.remote.webelement import WebElement
 
 from model.user import User
+from pages.locators.user_page_locators import UserPageLocators
 
 
 class UserHelper:
@@ -19,7 +20,7 @@ class UserHelper:
         print("Add user and submit")
         self.fill_form(user)
         # submit creation
-        submitBtn = driver.find_element_by_xpath("//*[@name='submit']")
+        submitBtn = driver.find_element_by_xpath(UserPageLocators.SUBMIT_BTN)
         submitBtn.click()
 
     def fill_form(self, user):
@@ -39,7 +40,7 @@ class UserHelper:
         print("Delete first user")
         driver = self.app.driver
         self.select_first()
-        delete_btn = driver.find_element_by_xpath("//*[@value='Delete']")
+        delete_btn = driver.find_element_by_xpath(UserPageLocators.DELETE_BTN)
         delete_btn.click()
 
         alert = Alert(driver)
@@ -47,14 +48,14 @@ class UserHelper:
 
     def select_first(self):
         driver = self.app.driver
-        first_checkbox = driver.find_element_by_xpath("//*[@id='maintable']/tbody/tr[2]/td[1]")
+        first_checkbox = driver.find_element_by_xpath(UserPageLocators.FIRST_ELEMENT_IN_TABLE_CHECKBOX)
         first_checkbox.click()
 
     def modify(self, modify_data):
         driver = self.app.driver
         self.select_first()
         # open modification form
-        modify_first_brt = driver.find_element_by_xpath("//*[@id='maintable']/tbody/tr[2]/td[8]")
+        modify_first_brt = driver.find_element_by_xpath(UserPageLocators.MODIFY_FIRST_ELEMENT_BUTTON)
         modify_first_brt.click()
         self.fill_form(modify_data)
         update_btn = driver.find_element_by_name("update")
@@ -73,13 +74,13 @@ class UserHelper:
         return self.get_table_lenght(driver)
 
     def get_table_lenght(self, driver):
-        return len(driver.find_elements_by_xpath("//table[@id='maintable']/tbody/tr[@name='entry']"))
+        return len(driver.find_elements_by_xpath(UserPageLocators.TABLE_ROWS))
 
     def get_user_list(self):
         driver = self.app.driver
         self.back_to_home_page()
         userList = []
-        for element in driver.find_elements_by_xpath("//tr[@name='entry']"):
+        for element in driver.find_elements_by_xpath(UserPageLocators.TABLE_ROWS):
             name = element.find_element_by_xpath("./td[3]").text  # './' - locates element from parent
             id = element.find_element_by_xpath("./td[1]/input").get_attribute("value")
             userList.append(User(name=name, id=id))

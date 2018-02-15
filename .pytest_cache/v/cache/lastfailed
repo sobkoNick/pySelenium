@@ -1,1 +1,3 @@
-{}
+{
+  "test/test_add_user.py::test_add_empty": true
+}

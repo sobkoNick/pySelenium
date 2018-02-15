@@ -22,6 +22,7 @@ class UserHelper:
         # submit creation
         submitBtn = driver.find_element_by_xpath(UserPageLocators.SUBMIT_BTN)
         submitBtn.click()
+        self.user_cache = None
 
     def fill_form(self, user):
         # fill form
@@ -42,9 +43,9 @@ class UserHelper:
         self.select_first()
         delete_btn = driver.find_element_by_xpath(UserPageLocators.DELETE_BTN)
         delete_btn.click()
-
         alert = Alert(driver)
         alert.accept()
+        self.user_cache = None
 
     def select_first(self):
         driver = self.app.driver
@@ -60,9 +61,10 @@ class UserHelper:
         self.fill_form(modify_data)
         update_btn = driver.find_element_by_name("update")
         update_btn.click()
-        self.back_to_home_page()
+        self.go_to_home_page()
+        self.user_cache = None
 
-    def back_to_home_page(self):
+    def go_to_home_page(self):
         driver = self.app.driver
         if not driver.current_url.endswith('addressbook/') and self.get_table_lenght(driver) > 0:
             print("Open home page")
@@ -70,18 +72,21 @@ class UserHelper:
 
     def count(self):
         driver = self.app.driver
-        self.back_to_home_page()
+        self.go_to_home_page()
         return self.get_table_lenght(driver)
 
     def get_table_lenght(self, driver):
         return len(driver.find_elements_by_xpath(UserPageLocators.TABLE_ROWS))
 
+    user_cache = None
+
     def get_user_list(self):
-        driver = self.app.driver
-        self.back_to_home_page()
-        userList = []
-        for element in driver.find_elements_by_xpath(UserPageLocators.TABLE_ROWS):
-            name = element.find_element_by_xpath("./td[3]").text  # './' - locates element from parent
-            id = element.find_element_by_xpath("./td[1]/input").get_attribute("value")
-            userList.append(User(name=name, id=id))
-        return userList
+        if self.user_cache is None:
+            driver = self.app.driver
+            # self.go_to_home_page()
+            self.user_cache = []
+            for element in driver.find_elements_by_xpath(UserPageLocators.TABLE_ROWS):
+                name = element.find_element_by_xpath("./td[3]").text  # './' - locates element from parent
+                id = element.find_element_by_xpath("./td[1]/input").get_attribute("value")
+                self.user_cache.append(User(name=name, id=id))
+            return list(self.user_cache)

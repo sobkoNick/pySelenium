@@ -11,7 +11,7 @@ def test_modify_name(app):
     user = User(name="Modified name")
     user.id = old_users[modifyIndex].id
 
-    app.user_helper.modify(user, modifyIndex)
+    app.user_helper.modify_user(user, modifyIndex)
     app.user_helper.go_to_home_page()
 
     new_users = app.user_helper.get_user_list()

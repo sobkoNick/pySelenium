@@ -1,11 +1,16 @@
 from sys import maxsize
 
+
 class User:
-    def __init__(self, name=None, last_name=None, nick_name=None, id=None):
+    def __init__(self, name=None, last_name=None, nick_name=None,
+                 id=None, home_phone=None, mobile_phone=None, work_phone=None):
         self.name = name
         self.last_name = last_name
         self.nick_name = nick_name
         self.id = id
+        self.home_phone = home_phone
+        self.mobile_phone = mobile_phone
+        self.work_phone = work_phone
 
     def __repr__(self) -> str:
         return "User(%s, %s, %s, %s)" % (self.name, self.last_name, self.nick_name, self.id)
@@ -18,4 +23,3 @@ class User:
             return int(self.id)
         else:
             return maxsize
-

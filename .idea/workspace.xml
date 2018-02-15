@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e31b36ed-9a37-46ea-a97a-e388cd04f7b9" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/test_phones.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.pytest_cache/v/cache/lastfailed" afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/lastfailed" />
       <change beforePath="$PROJECT_DIR$/model/user.py" afterPath="$PROJECT_DIR$/model/user.py" />
+      <change beforePath="$PROJECT_DIR$/pages/locators/user_page_locators.py" afterPath="$PROJECT_DIR$/pages/locators/user_page_locators.py" />
+      <change beforePath="$PROJECT_DIR$/pages/session.py" afterPath="$PROJECT_DIR$/pages/session.py" />
       <change beforePath="$PROJECT_DIR$/pages/user_page.py" afterPath="$PROJECT_DIR$/pages/user_page.py" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_user.py" afterPath="$PROJECT_DIR$/test/test_add_user.py" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_user.py" afterPath="$PROJECT_DIR$/test/test_del_user.py" />
       <change beforePath="$PROJECT_DIR$/test/test_modify_user.py" afterPath="$PROJECT_DIR$/test/test_modify_user.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,13 +20,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test_add_user.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_add_user.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test_add_user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+            <state relative-caret-position="170">
+              <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fixture/application.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="session.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/session.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
               <folding>
-                <element signature="e#24#35#0" expanded="true" />
+                <element signature="e#0#72#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -34,28 +55,8 @@
       <file leaf-file-name="user.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_page_locators.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/locators/user_page_locators.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_modify_user.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_modify_user.py">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="89" lean-forward="true" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="89" />
+              <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -64,10 +65,22 @@
       <file leaf-file-name="user_page.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/user_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            <state relative-caret-position="187">
+              <caret line="111" column="8" lean-forward="false" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_phones.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/test_phones.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="89" lean-forward="true" selection-start-line="19" selection-start-column="89" selection-end-line="19" selection-end-column="89" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,6 +99,10 @@
     <findStrings>
       <find>appli</find>
       <find>back_to_home_page</find>
+      <find>mod</find>
+      <find>select_user_by_index</find>
+      <find>\&quot;</find>
+      <find>/td[6]</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,22 +124,43 @@
         <option value="$PROJECT_DIR$/conftest.py" />
         <option value="$PROJECT_DIR$/fixture/application.py" />
         <option value="$PROJECT_DIR$/fixture/user_page.py" />
-        <option value="$PROJECT_DIR$/pages/locators/user_page_locators.py" />
         <option value="$PROJECT_DIR$/pages/locators/start_page_locators.py" />
         <option value="$PROJECT_DIR$/pages/locators/log_in_out_page_locators.py" />
-        <option value="$PROJECT_DIR$/pages/session.py" />
-        <option value="$PROJECT_DIR$/test/test_del_user.py" />
-        <option value="$PROJECT_DIR$/model/user.py" />
         <option value="$PROJECT_DIR$/test/test_modify_user.py" />
-        <option value="$PROJECT_DIR$/pages/user_page.py" />
+        <option value="$PROJECT_DIR$/test/test_del_user.py" />
         <option value="$PROJECT_DIR$/test/test_add_user.py" />
+        <option value="$PROJECT_DIR$/pages/locators/user_page_locators.py" />
+        <option value="$PROJECT_DIR$/model/user.py" />
+        <option value="$PROJECT_DIR$/pages/session.py" />
+        <option value="$PROJECT_DIR$/pages/user_page.py" />
+        <option value="$PROJECT_DIR$/test/test_phones.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
+    <option name="y" value="3" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyPep8NamingInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -179,7 +217,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/seleniumIde.py" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -205,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in test_add_user.py">
+  <component name="RunManager" selected="Python tests.py.test for test_phones.test_phones_on_view_page">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -224,50 +262,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="py.test for test_modify_user.test_modify_name" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="user_page" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pySelenium" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_modify_user.test_modify_name&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="py.test in test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pySelenium" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
-    <configuration name="py.test in test_add_user.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\MykolaSobko\PycharmProjects\hello\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pySelenium" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pages/user_page.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="py.test for test_phones.test_phones_on_view_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pySelenium" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_add_user.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_phones.test_phones_on_view_page&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="py.test in test_del_user.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -299,20 +325,35 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_modify_user.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
+    <configuration name="py.test in test_phones.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pySelenium" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_phones.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_add_user.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_del_user.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_user.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_modify_user.test_modify_name" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_del_user.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_user.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python.user_page" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_phones.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_phones.test_phones_on_view_page" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_add_user.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_user.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_del_user.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_modify_user.test_modify_name" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test_phones.test_phones_on_view_page" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_phones.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_user.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python.user_page" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_del_user.py" />
       </list>
     </recent_temporary>
   </component>
@@ -414,39 +455,53 @@
       <option name="project" value="LOCAL" />
       <updated>1518691838414</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="user toString method add and equals for list comparison.&#10;add cashing through user_cache">
+      <created>1518698865533</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1518698865533</updated>
+    </task>
+    <task id="LOCAL-00014" summary="modify and delete index now chosen by random">
+      <created>1518703794264</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1518703794264</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_test_add_user_py - 2018.02.15 at 13h 30m 22s.xml">
-      <configuration name="py.test in test_add_user.py" configurationId="tests" />
+    <history-entry file="py_test_for_test_phones_test_phones_on_view_page - 2018.02.15 at 19h 02m 50s.xml">
+      <configuration name="py.test for test_phones.test_phones_on_view_page" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_add_user_py - 2018.02.15 at 13h 31m 45s.xml">
-      <configuration name="py.test in test_add_user.py" configurationId="tests" />
+    <history-entry file="py_test_for_test_phones_test_phones_on_view_page - 2018.02.15 at 19h 05m 29s.xml">
+      <configuration name="py.test for test_phones.test_phones_on_view_page" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_add_user_py - 2018.02.15 at 13h 35m 52s.xml">
-      <configuration name="py.test in test_add_user.py" configurationId="tests" />
+    <history-entry file="py_test_for_test_phones_test_phones_on_view_page - 2018.02.15 at 19h 06m 31s.xml">
+      <configuration name="py.test for test_phones.test_phones_on_view_page" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_add_user_py - 2018.02.15 at 13h 36m 40s.xml">
-      <configuration name="py.test in test_add_user.py" configurationId="tests" />
+    <history-entry file="py_test_for_test_phones_test_phones_on_view_page - 2018.02.15 at 19h 08m 20s.xml">
+      <configuration name="py.test for test_phones.test_phones_on_view_page" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_add_user_py - 2018.02.15 at 13h 37m 14s.xml">
-      <configuration name="py.test in test_add_user.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_phones_py - 2018.02.15 at 18h 42m 42s.xml">
+      <configuration name="py.test in test_phones.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_add_user_py - 2018.02.15 at 13h 47m 48s.xml">
-      <configuration name="py.test in test_add_user.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_phones_py - 2018.02.15 at 18h 44m 03s.xml">
+      <configuration name="py.test in test_phones.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_add_user_py - 2018.02.15 at 13h 49m 03s.xml">
-      <configuration name="py.test in test_add_user.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_phones_py - 2018.02.15 at 18h 45m 32s.xml">
+      <configuration name="py.test in test_phones.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_add_user_py - 2018.02.15 at 14h 31m 25s.xml">
-      <configuration name="py.test in test_add_user.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_phones_py - 2018.02.15 at 18h 46m 09s.xml">
+      <configuration name="py.test in test_phones.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_modify_user_py - 2018.02.15 at 13h 57m 11s.xml">
-      <configuration name="py.test in test_modify_user.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_phones_py - 2018.02.15 at 18h 46m 46s.xml">
+      <configuration name="py.test in test_phones.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_modify_user_py - 2018.02.15 at 13h 59m 59s.xml">
-      <configuration name="py.test in test_modify_user.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_phones_py - 2018.02.15 at 19h 06m 55s.xml">
+      <configuration name="py.test in test_phones.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -459,7 +514,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -472,7 +527,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21536796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39456522" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33586955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -523,16 +578,33 @@
     <MESSAGE value="add verification if there is added users in table. if not - add one.&#10;chrome starts slowly" />
     <MESSAGE value="add assertions to all tests" />
     <MESSAGE value="add package with locators for pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="add package with locators for pages" />
+    <MESSAGE value="user toString method add and equals for list comparison.&#10;add cashing through user_cache" />
+    <MESSAGE value="modify and delete index now chosen by random" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify and delete index now chosen by random" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>element.find_element_by_xpath(&quot;./td[6]&quot;)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>element.find_element_by_xpath(&quot;./td[6]&quot;).text</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>randrange(len(old_users))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>app.user_helper.count() == 0</expression-string>
         <language-id>Python</language-id>
@@ -560,9 +632,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -580,7 +650,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#28#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -597,7 +669,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="49" lean-forward="true" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -632,9 +704,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -642,7 +712,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-          <folding />
+          <folding>
+            <element signature="e#0#28#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -661,7 +733,7 @@
         <state relative-caret-position="612">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -751,44 +823,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/application.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/locators/log_in_out_page_locators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="42" lean-forward="true" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="19" column="76" lean-forward="true" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/1919372498/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="5246" column="8" lean-forward="false" selection-start-line="5246" selection-start-column="8" selection-end-line="5246" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_del_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -801,14 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/locators/user_page_locators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/constants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -817,46 +847,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_modify_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#27#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_del_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#28#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/locators/log_in_out_page_locators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="255">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/locators/user_page_locators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="65" lean-forward="true" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="204">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_modify_user.py">
+    <entry file="file://$PROJECT_DIR$/test/test_add_user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="89" lean-forward="true" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="89" />
+        <state relative-caret-position="170">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/user_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="187">
+          <caret line="111" column="8" lean-forward="false" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_add_user.py">
+    <entry file="file://$PROJECT_DIR$/test/test_phones.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        <state relative-caret-position="323">
+          <caret line="19" column="89" lean-forward="true" selection-start-line="19" selection-start-column="89" selection-end-line="19" selection-end-column="89" />
           <folding>
-            <element signature="e#24#35#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -9,11 +9,13 @@ fixture = None
 # @pytest.fixture(scope="session") # use one browser for all tests, BUT IT NEEDS TO ADD LOG OUT TO TEST
 def app(request):
     global fixture
+    browser = request.config.getoption("--browser")
+    baseUrl = request.config.getoption("--baseUrl")
     if fixture is None:
-        fixture = Application()
+        fixture = Application(browser=browser, project_url=baseUrl)
     else:
         if not fixture.is_valid():
-            fixture = Application()
+            fixture = Application(browser=browser, project_url=baseUrl)
     fixture.session.ensure_login(username=Constants.USER_NAME, password=Constants.PASSWORD)
     return fixture
 
@@ -26,3 +28,7 @@ def stop(request):
         fixture.destroy()
     request.addfinalizer(log_out)
     return fixture
+
+def pytest_addoption(parser):
+    parser.addoption("--browser", action="store", default="chrome")
+    parser.addoption("--baseUrl", action="store", default="addressbook/")

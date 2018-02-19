@@ -14,4 +14,18 @@
 1518440151146	Marionette	INFO	Listening on port 2828
 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
 [Child 5044] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
-[Child 5044] WARNING: pipe error: 109: file c:/builds/moz2_slav
+[Child 5044] WARNING: pipe error: 109: file c:/builds/moz2_slav1519060780539	geckodriver	INFO	geckodriver 0.19.1
+1519060780557	geckodriver	INFO	Listening on 127.0.0.1:52851
+1519060783660	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\MYKOLA~1\\AppData\\Local\\Temp\\rust_mozprofile.T67EQayMPKKE"
+1519060898768	geckodriver	INFO	geckodriver 0.19.1
+1519060898773	geckodriver	INFO	Listening on 127.0.0.1:52917
+1519060901907	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\MYKOLA~1\\AppData\\Local\\Temp\\rust_mozprofile.3p3q4A9ZKtTv"
+Unable to read VR Path Registry from C:\Users\MykolaSobko\AppData\Local\openvr\openvrpaths.vrpath
+1519060902238	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\MykolaSobko\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\MykolaSobko\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\MykolaSobko\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\MykolaSobko\AppData\Local\openvr\openvrpaths.vrpath
+1519060903168	Marionette	INFO	Listening on port 52925
+1519060903436	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 19588, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346

@@ -100,12 +100,8 @@ class UserHelper:
             for element in driver.find_elements_by_xpath(UserPageLocators.TABLE_ROWS):
                 name = element.find_element_by_xpath("./td[3]").text  # './' - locates element from parent
                 id = element.find_element_by_xpath("./td[1]/input").get_attribute("value")
-                all_phones = element.find_element_by_xpath("./td[6]").text.splitlines()
-                if len(all_phones) == 3:
-                    self.user_cache.append(User(name=name, id=id, home_phone=all_phones[0], mobile_phone=all_phones[1],
-                                                work_phone=all_phones[2]))
-                else:
-                    self.user_cache.append(User(name=name, id=id))
+                all_phones = element.find_element_by_xpath("./td[6]").text
+                self.user_cache.append(User(name=name, id=id, all_phones_from_home_page=all_phones))
 
             return list(self.user_cache)
 
@@ -118,8 +114,8 @@ class UserHelper:
         home_phone = driver.find_element_by_name("home").get_attribute("value")
         mobile_phone = driver.find_element_by_name("mobile").get_attribute("value")
         work_phone = driver.find_element_by_name("work").get_attribute("value")
-        return User(name=name, last_name=last_name, nick_name=None, id=id,
-                    home_phone=home_phone, mobile_phone=mobile_phone, work_phone=work_phone)
+        return User(name=name, last_name=last_name, nick_name=None, id=id, home_phone=home_phone,
+                    mobile_phone=mobile_phone, work_phone=work_phone)
 
     def get_user_from_view_page(self, index):
         driver = self.app.driver  # type: WebDriver
@@ -128,4 +124,4 @@ class UserHelper:
         homePhone = re.search("H: (.*)", text).group(1)
         workPhone = re.search("W: (.*)", text).group(1)
         mobilePhone = re.search("M: (.*)", text).group(1)
-        return User(mobile_phone=mobilePhone, work_phone=workPhone, home_phone=homePhone)
+        return User(home_phone=homePhone, mobile_phone=mobilePhone, work_phone=workPhone)

@@ -1,5 +1,9 @@
+import importlib
 import json
 
+import os
+
+import jsonpickle
 import pytest
 from fixture.application import Application
 from constants import Constants
@@ -7,6 +11,9 @@ from constants import Constants
 fixture = None
 
 target = None
+
+ROOT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)))
+
 
 # start fixture with assertion on fixture valid
 @pytest.fixture
@@ -16,8 +23,9 @@ def app(request):
     global target
     browser = request.config.getoption("--browser")
     if target is None:
-        with open(request.config.getoption("--target")) as config_file:
-            target = json.load(config_file)
+        config_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), request.config.getoption("--target"))
+        with open(config_file) as file:
+            target = json.load(file)
     if fixture is None or not fixture.is_valid():
         fixture = Application(browser=browser, project_url=target['baseUrl'])
 
@@ -31,9 +39,30 @@ def stop(request):
     def log_out():
         fixture.session.ensure_logout()
         fixture.destroy()
+
     request.addfinalizer(log_out)
     return fixture
+
 
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="chrome")
     parser.addoption("--target", action="store", default="target.json")
+
+
+def pytest_generate_tests(metafunc):  # add dynamic data binding from file data/users.py
+    for fixt in metafunc.fixturenames:
+        if fixt.startswith("data_"):  # if test has parameter like 'data_' (data_users)
+            testData = load_from_module(fixt[5:])  # upload data from module that is '#data_#USERS'
+            metafunc.parametrize(fixt, testData, ids=[str(x) for x in testData])  # (app, data_users)
+        elif fixt.startswith("json_"):
+            testData = load_from_json(fixt[5:])
+            metafunc.parametrize(fixt, testData, ids=[str(x) for x in testData])  # (app, json_users)
+
+def load_from_module(module):
+    return importlib.import_module("data.%s" % module).testData
+
+
+def load_from_json(file):
+    json_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data/%s.json" % file)
+    with open(json_file) as jfile:
+        return jsonpickle.decode(jfile.read())

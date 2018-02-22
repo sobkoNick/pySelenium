@@ -42,9 +42,17 @@ class UserHelper:
             element.send_keys(text)
 
     def delete_user(self, index):
-        print("Delete first user")
         driver = self.app.driver
         self.select_user_by_index(index)
+        delete_btn = driver.find_element_by_xpath(UserPageLocators.DELETE_BTN)
+        delete_btn.click()
+        alert = Alert(driver)
+        alert.accept()
+        self.user_cache = None
+
+    def delete_user_by_id(self, id):
+        driver = self.app.driver
+        self.select_user_by_id(id)
         delete_btn = driver.find_element_by_xpath(UserPageLocators.DELETE_BTN)
         delete_btn.click()
         alert = Alert(driver)
@@ -54,6 +62,11 @@ class UserHelper:
     def select_user_by_index(self, index):
         driver = self.app.driver
         checkbox = driver.find_elements_by_xpath(UserPageLocators.CHECKBOXES_IN_TABLE)[index]
+        checkbox.click()
+
+    def select_user_by_id(self, id):
+        driver = self.app.driver
+        checkbox = driver.find_element_by_xpath(UserPageLocators.CHECKBOXES_IN_TABLE_WITH_ID % id)
         checkbox.click()
 
     def modify_user(self, modify_data, index):
@@ -125,3 +138,5 @@ class UserHelper:
         workPhone = re.search("W: (.*)", text).group(1)
         mobilePhone = re.search("M: (.*)", text).group(1)
         return User(home_phone=homePhone, mobile_phone=mobilePhone, work_phone=workPhone)
+
+

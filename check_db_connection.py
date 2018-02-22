@@ -1,11 +1,13 @@
 import mysql.connector
 
-connection = mysql.connector.connect(host="127.0.0.1", database="addressbook", user="root", password="")
+from  fixture.db import DbFixture
+
+db = DbFixture(host="127.0.0.1", name="addressbook", user="root", password="")
 
 try:
-    cursor = connection.cursor()
-    cursor.execute("select * from addressbook;")
-    for row in cursor.fetchall():
-        print(row)
+    users = db.get_user_list()
+    for user in users:
+        print(user)
+    print(len(users))
 finally:
-    connection.close()
+    db.destroy()

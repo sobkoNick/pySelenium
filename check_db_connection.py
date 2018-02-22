@@ -1,13 +1,13 @@
 import mysql.connector
 
-from  fixture.db import DbFixture
+from fixture.orm import ORMFixture
 
-db = DbFixture(host="127.0.0.1", name="addressbook", user="root", password="")
+db = ORMFixture(host="127.0.0.1", name="addressbook", user="root", password="")
 
 try:
-    users = db.get_user_list()
-    for user in users:
-        print(user)
-    print(len(users))
+    list = db.get_user_list()
+    for iteam in list:
+        print(iteam)
+    print(len(list))
 finally:
-    db.destroy()
+    pass

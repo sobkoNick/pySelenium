@@ -5,8 +5,8 @@
 from model.user import User
 
 
-def test_add_new(app, db, json_users):
-    user = json_users
+def test_add_new(app, db, excel_usersExcel):
+    user = excel_usersExcel
     old_users = db.get_user_list()
     app.user_helper.create_and_submit(user)
     app.user_helper.go_to_home_page()

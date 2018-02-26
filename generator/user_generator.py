@@ -1,3 +1,4 @@
+from openpyxl import Workbook
 import jsonpickle
 import random
 import string
@@ -15,7 +16,7 @@ except getopt.GetoptError as err:
     sys.exit(2)
 
 n = 5
-f = "data/users.json"
+f = "data/usersExcel.xlsx"
 
 for o, a in opts:
     if o == "-n":
@@ -37,6 +38,18 @@ testData = [
 
 file = os.path.join(conftest.ROOT_DIR, f)
 
-with open(file, "w") as out:
-    jsonpickle.set_encoder_options("json", indent=2)
-    out.write(jsonpickle.encode(testData))
+# with open(file, "w") as out:
+#     jsonpickle.set_encoder_options("json", indent=2)
+#     out.write(jsonpickle.encode(testData))
+
+# with open(file, "w") as out:
+wb = Workbook()
+wSheet1 = wb.active
+wSheet1.title = "data"
+
+for row in range(1, len(testData) + 1):
+    _=wSheet1.cell(column=1, row=row, value=str(testData[row-1].name))
+    _=wSheet1.cell(column=2, row=row, value=str(testData[row-1].last_name))
+    _=wSheet1.cell(column=3, row=row, value=str(testData[row-1].nick_name))
+
+wb.save(f)

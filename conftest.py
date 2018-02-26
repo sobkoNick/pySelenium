@@ -5,9 +5,13 @@ import os
 
 import jsonpickle
 import pytest
+from openpyxl import load_workbook
+from openpyxl.cell import cell
+
 from fixture.application import Application
 from constants import Constants
 from fixture.db import DbFixture
+from model.user import User
 
 fixture = None
 target = None
@@ -76,6 +80,9 @@ def pytest_generate_tests(metafunc):  # add dynamic data binding from file data/
         elif fixt.startswith("json_"):
             testData = load_from_json(fixt[5:])
             metafunc.parametrize(fixt, testData, ids=[str(x) for x in testData])  # (app, json_users)
+        elif fixt.startswith("excel_"):
+            testData = load_from_excel(fixt[6:])
+            metafunc.parametrize(fixt, testData, ids=[str(x) for x in testData])
 
 def load_from_module(module):
     return importlib.import_module("data.%s" % module).testData
@@ -85,3 +92,12 @@ def load_from_json(file):
     json_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data/%s.json" % file)
     with open(json_file) as jfile:
         return jsonpickle.decode(jfile.read())
+
+def load_from_excel(file):
+    excel_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data\\%s.xlsx" % file)
+    wb = load_workbook(filename=excel_file, read_only=True)
+    ws = wb["data"]
+    users = []
+    for row in ws.iter_rows(min_row=1, min_col=1, max_row=5, max_col=3):
+        users.append(User(name=row[0].value, last_name=row[1].value, nick_name=row[2].value))
+    return users
